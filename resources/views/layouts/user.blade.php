@@ -8,6 +8,7 @@
 
 <body>
     <div class="container-xxl bg-white p-0">
+        
         @yield('content')
 
         @include('part.footer')
