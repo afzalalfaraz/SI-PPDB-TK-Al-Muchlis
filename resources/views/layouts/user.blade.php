@@ -26,5 +26,5 @@
 
     <!-- Template Javascript -->
     <script src="{{ asset('preschool-website-template/js/main.js') }}"></script>
-
+</body>
 </html>

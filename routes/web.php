@@ -22,3 +22,7 @@ Route::get('/', function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('/', HomeController::class);
 Route::resource('/visimisi', VisiMisiController::class);
+
+Route::get('/home2', function () {
+    return view('user.home2');
+});

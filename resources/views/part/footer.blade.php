@@ -1,4 +1,3 @@
-<!-- Footer Start -->
 <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
@@ -26,22 +25,22 @@
                 <h3 class="text-white mb-4">Photo Gallery</h3>
                 <div class="row g-2 pt-2">
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="{{ asset('preschool-website-template/img/classes-1.jpg')}}" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="{{ asset('preschool-website-template/img/classes-2.jpg')}}" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="{{ asset('preschool-website-template/img/classes-3.jpg')}}" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="{{ asset('preschool-website-template/img/classes-4.jpg')}}" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="{{ asset('preschool-website-template/img/classes-5.jpg')}}" alt="">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="{{ asset('preschool-website-template/img/classes-6.jpg')}}" alt="">
                     </div>
                 </div>
             </div>
@@ -76,5 +75,3 @@
         </div>
     </div>
 </div>
-<!-- Footer End -->
-
