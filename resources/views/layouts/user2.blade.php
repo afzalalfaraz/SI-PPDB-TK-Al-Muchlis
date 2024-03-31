@@ -2,38 +2,70 @@
 <html lang="en">
 
 <head>
-    <title>TK Al-Muchlis</title>
+
+    <title>Rumah Kost Thariq</title>
     @include('part2.head')
 </head>
 
-<body>
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+
+    <!-- TopBar -->
+    @include('part2.topbar')
+
+    <!-- Logout Modal-->
+    {{-- <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah Anda yakin ingin logout?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                    <button type="button" class="btn btn-danger" onclick="document.getElementById('logout-form').submit();">Logout</button>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> --}}
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+
     @yield('content')
 
-    @include('part2.footer')
-    <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-                stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-                stroke-miterlimit="10" stroke="#F96D00" />
-        </svg></div>
+    <!-- End of Main Content -->
 
-    <!-- JavaScript Libraries -->
-    <script src="{{ asset('js/jquery.min.js')}}"></script>
-    <script src="{{ asset('js/jquery-migrate-3.0.1.min.js')}}"></script>
-    <script src="{{ asset('js/popper.min.js')}}"></script>
-    <script src="{{ asset('js/bootstrap.min.js')}}"></script>
-    <script src="{{ asset('js/jquery.easing.1.3.js')}}"></script>
-    <script src="{{ asset('js/jquery.waypoints.min.js')}}"></script>
-    <script src="{{ asset('js/jquery.stellar.min.js')}}"></script>
-    <script src="{{ asset('js/owl.carousel.min.js')}}"></script>
-    <script src="{{ asset('js/jquery.magnific-popup.min.js')}}"></script>
-    <script src="{{ asset('js/aos.js')}}"></script>
-    <script src="{{ asset('js/jquery.animateNumber.min.js')}}"></script>
-    <script src="{{ asset('js/scrollax.min.js')}}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="{{ asset('js/google-map.js')}}"></script>
-    <script src="{{ asset('js/main.js')}}"></script>
-</body>
+    <!-- Footer -->
+    @include('part2.footer')
+    <!-- End of Footer -->
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+            
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="{{ asset('landing/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('landing/assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('landing/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('landing/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('landing/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('landing/assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ asset('landing/assets/vendor/php-email-form/validate.js') }}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{ asset('landing/assets/js/main.js') }}"></script>
+
+    <!-- End of Content Wrapper -->
+
+
+    <!-- End of Page Wrapper -->
 
 </html>
